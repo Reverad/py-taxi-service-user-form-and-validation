@@ -3,6 +3,7 @@
 {% block content %}
   <h1>
     {{ car.model }}
+      <a href="{% url 'taxi:car-list' %}">Back</a>
   </h1>
   <p>Manufacturer: ({{ car.manufacturer.name }}, {{ car.manufacturer.country }})</p>
   <h1>Drivers
